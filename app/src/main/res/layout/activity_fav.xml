@@ -1,0 +1,105 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_list_style"
+    android:textDirection="rtl">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/favTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="סיכומים מועדפים"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/deleteSummaryButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="מחיקת סיכום"
+                android:backgroundTint="@color/light_purple"
+                android:textColor="@color/black"                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/viewSummaryButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="עיין בסיכום"
+                android:backgroundTint="@color/light_purple"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- רשימת סיכומים  -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/summariesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:clipToPadding="false"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/selectionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/summaryNumberEditText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="הכנס מספר סיכום"
+                android:inputType="number"
+                android:textDirection="rtl" />
+
+            <Button
+                android:id="@+id/confirmSelectionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="אישור"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="חזור"
+        android:textStyle="bold"
+        android:backgroundTint="@color/light_purple"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

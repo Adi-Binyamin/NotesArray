@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:layoutDirection="rtl"
+    android:background="@drawable/background_list_style"
+    >
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+
+    <Button
+        android:id="@+id/searchButton"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="חיפוש סיכום"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/light_purple"
+        />
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="העלאת סיכום חדש"
+        android:backgroundTint="@color/light_purple"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/favoritesButton"
+        android:backgroundTint="@color/light_purple"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="סיכומים מועדפים" />
+
+</LinearLayout>
