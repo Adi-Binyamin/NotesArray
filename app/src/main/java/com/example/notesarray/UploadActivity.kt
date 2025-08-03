@@ -66,11 +66,11 @@ class UploadActivity : AppCompatActivity() {
     private fun uploadSummary() {
         val summaryName = summaryNameEditText.text.toString().trim()
         if (summaryName.isEmpty()) {
-            Toast.makeText(this, "אנא הזיני שם לסיכום", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "אנא הזין שם לסיכום", Toast.LENGTH_SHORT).show()
             return
         }
         if (pdfUri == null) {
-            Toast.makeText(this, "אנא בחרי קובץ PDF", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "אנא בחר קובץ PDF", Toast.LENGTH_SHORT).show()
             return
         }
 
